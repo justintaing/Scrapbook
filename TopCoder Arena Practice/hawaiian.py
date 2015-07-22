@@ -26,4 +26,5 @@ class Hawaiian(object):
 
 if __name__ == "__main__":
     h = Hawaiian()
-    print(h.getWords("Mauna Kea and Mauna Koa are two mountains"))
+    assert h.getWords("Mauna Kea and Mauna Koa are two mountains") == ("Mauna", "Kea", "Mauna", "Koa")
+    assert h.getWords("The quick brown fox jumps over the lazy brown dog.") == ()

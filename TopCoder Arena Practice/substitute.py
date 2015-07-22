@@ -20,5 +20,5 @@ class Substitute(object):
 
 if __name__ == "__main__":
     s = Substitute()
-    result = s.getValue("TRADINGFEW", "LGXWE")
-    print(result)
+    assert s.getValue("TRADINGFEW", "LGXWE") == 709
+    assert s.getValue("ABCDEFGHIJ", "XJ") == 0

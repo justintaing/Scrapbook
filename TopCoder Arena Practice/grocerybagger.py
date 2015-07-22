@@ -18,6 +18,9 @@ class GroceryBagger(object):
 
 if __name__ == "__main__":
     grocery = GroceryBagger()
-    print(grocery.minimumBags(5, ("CANNED", "CANNED", "PRODUCE", "DAIRY",
+    assert grocery.minimumBags(5, ("CANNED", "CANNED", "PRODUCE", "DAIRY",
                                   "MEAT", "BREAD", "HOUSEHOLD", "PRODUCE",
-                                  "FROZEN", "PRODUCE", "DAIRY")))
+                                  "FROZEN", "PRODUCE", "DAIRY")) == 7
+
+    assert grocery.minimumBags(2, ("CANNED", "CANNED",
+                                   "PRODUCE", "PRODUCE")) == 2

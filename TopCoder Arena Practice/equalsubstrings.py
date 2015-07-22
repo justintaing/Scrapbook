@@ -41,5 +41,5 @@ class EqualSubstrings(object):
 
 if __name__ == "__main__":
     sb = EqualSubstrings()
-    results = sb.getSubstrings("")
-    print(results)
+    assert sb.getSubstrings("badklsjbasdbfdbfabdfahdbakjhdbasdbf") == ("badklsjbasdbfdbfabdf", "ahdbakjhdbasdbf")
+    assert sb.getSubstrings("aaaaaabbbbbbbbb") == ("aaaaaabbb", "bbbbbb")
