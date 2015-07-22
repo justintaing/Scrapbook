@@ -1,6 +1,16 @@
 __author__ = 'justintaing'
 # Easy
 
+# PROBLEM STATEMENT
+# You will be given a str consisting of lowercase letters. You will return a
+# containing elements x and y in that order. The returned s x and y must
+# satisfy:
+
+# 1) The string xy (x with y concatenated on the end) must equal str.
+# 2) The number of a's in x must equal the number of b's in y.
+# 3) If multiple solutions are possible, use the one that maximizes the length
+# of x.
+
 class EqualSubstrings(object):
     def getSubstrings(self, string):
         """
