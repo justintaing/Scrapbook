@@ -19,8 +19,8 @@ __author__ = 'justintaing'
 class Hawaiian(object):
     def isHawaiian(self, word):
         """
-        :param word: string
-        :return: true if the word is hawaiian, false otherwise
+        :param word: (string) word to check
+        :return: (bool) true if the word is hawaiian, false otherwise
         """
         alpha = {'a', 'e', 'i', 'o', 'u', 'h', 'k', 'l', 'm', 'n', 'p', 'w'}
         leftover = set(word.lower()) - alpha
@@ -29,8 +29,8 @@ class Hawaiian(object):
 
     def getWords(self, sentence):
         """
-        :param sentence: string of words
-        :return: tuple of words which are hawaiian
+        :param sentence: (string) words separated with spaces
+        :return: (tuple: string) words which are hawaiian
         """
         words = sentence.split(' ')
         hawaiian_words = [word for word in words if self.isHawaiian(word)]

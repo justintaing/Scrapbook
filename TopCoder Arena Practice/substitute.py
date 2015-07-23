@@ -21,9 +21,9 @@ __author__ = 'justintaing'
 class Substitute(object):
     def getValue(self, key, code):
         """
-        :param key: string containing key encoding
-        :param code: string containing code to decode with key
-        :return: int of the decoded code
+        :param key: (string)  key encoding
+        :param code: (string) code to decode with key
+        :return: (int) decoded integer
         """
         result = ""
 

@@ -18,8 +18,8 @@ __author__ = 'justintaing'
 class GroceryBagger(object):
     def minimumBags(self, strength, itemType):
         """
-        strength: int between [1, 50]
-        itemType: tuple of strings between [1,50] elements
+        strength: (int) between [1, 50]
+        itemType: (tuple: strings) between [1,50] elements
         """
         from math import ceil
         num_bags = 0
@@ -28,6 +28,7 @@ class GroceryBagger(object):
             num_bags += ceil(itemType.count(item) / float(strength))
 
         return num_bags
+
 
 if __name__ == "__main__":
     grocery = GroceryBagger()

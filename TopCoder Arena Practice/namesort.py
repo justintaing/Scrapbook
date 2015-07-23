@@ -65,9 +65,8 @@ class NameSort(object):
 
     def newList(self, names):
         """
-        :param names: tuple of strings, names to sort
-        :return: tuple of strings with the sorted names, according to
-            given rules
+        :param names: (tuple: strings) names to sort
+        :return: (tuple: strings) the sorted names, according to given rules
         """
         last_names = list(map(lambda name: (name, name.lower().split()[-1]), names))
         self.mergesort(last_names)
