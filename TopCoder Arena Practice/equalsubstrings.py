@@ -13,11 +13,11 @@ __author__ = 'justintaing'
 
 class EqualSubstrings(object):
     def getSubstrings(self, string):
-        """
+        '''
         :param string: (string) lowercase letters
         :return: (tuple: strings) (x, y), where:
             number of a's in x = number of b's in y
-        """
+        '''
         start = 0
         end = len(string)
         mid = (start + end) // 2

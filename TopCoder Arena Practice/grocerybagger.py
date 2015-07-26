@@ -17,10 +17,10 @@ __author__ = 'justintaing'
 
 class GroceryBagger(object):
     def minimumBags(self, strength, itemType):
-        """
+        '''
         strength: (int) between [1, 50]
         itemType: (tuple: strings) between [1,50] elements
-        """
+        '''
         from math import ceil
         num_bags = 0
 

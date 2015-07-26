@@ -32,11 +32,11 @@ __author__ = 'justintaing'
 
 class Whisper(object):
     def toWhom(self, usernames, typed):
-        """
+        '''
         :param usernames: (tuple: strings) users logged in
         :param typed: (string) message entered
         :return: (string) recipient
-        """
+        '''
         from re import match
         typed = typed.lower()
 

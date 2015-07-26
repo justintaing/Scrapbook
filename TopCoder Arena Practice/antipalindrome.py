@@ -16,10 +16,10 @@ __author__ = 'justintaing'
 
 class AntiPalindrome(object):
     def is_anti(self, word):
-        """
+        '''
         :param word: (string) word to check
         :return: (bool) true if the word is an antipalindrome, false otherwise
-        """
+        '''
         if len(word) <= 1:
             return True
         elif word[0] != word[-1]:
@@ -28,10 +28,10 @@ class AntiPalindrome(object):
             return False
 
     def rearrange(self, s):
-        """
+        '''
         :param s: (string) word to rearrange into an antipalindrome
         :return: (string) rearranged word
-        """
+        '''
         from itertools import permutations
         num_char = len(set(s))
 

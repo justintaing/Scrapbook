@@ -55,12 +55,12 @@ __author__ = 'justintaing'
 
 class Lexer(object):
     def tokenize(self, tokens, input):
-        """
+        '''
         :param tokens: (tuple: strings) tokens
         :param input: (string) input to check for tokens
         :return: (tuple: string) tokens in order of when they were removed from
             the input string
-        """
+        '''
         removed = ()
 
         while input:

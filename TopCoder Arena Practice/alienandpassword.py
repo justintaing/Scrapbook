@@ -13,10 +13,10 @@ __author__ = 'justintaing'
 
 class AlienAndPassword(object):
     def getNumber(self, S):
-        """
+        '''
         :param S: (string) possible characters of the password
         :return: (int) the number of possible passwords
-        """
+        '''
         passwords = {S[:i]+S[i+1:] for i in range(len(S))}
         return len(passwords)
 

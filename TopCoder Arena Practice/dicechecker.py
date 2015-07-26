@@ -14,10 +14,10 @@ __author__ = 'justintaing'
 
 class DiceChecker(object):
     def badValues(self, values):
-        """
+        '''
         :param values: (list: int) die rolls
         :return: (list: int) sides of the die which are loaded
-        """
+        '''
         num_rolls = len(values)
         loaded_die = []
         for i in range(1, 7):

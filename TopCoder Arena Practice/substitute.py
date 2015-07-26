@@ -20,11 +20,11 @@ __author__ = 'justintaing'
 
 class Substitute(object):
     def getValue(self, key, code):
-        """
+        '''
         :param key: (string)  key encoding
         :param code: (string) code to decode with key
         :return: (int) decoded integer
-        """
+        '''
         result = ""
 
         for char in code:

@@ -64,10 +64,10 @@ class NameSort(object):
             self.merge(ls, left, right)
 
     def newList(self, names):
-        """
+        '''
         :param names: (tuple: strings) names to sort
         :return: (tuple: strings) the sorted names, according to given rules
-        """
+        '''
         last_names = list(map(lambda name: (name, name.lower().split()[-1]), names))
         self.mergesort(last_names)
 
